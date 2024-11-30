@@ -1,0 +1,103 @@
+/* Body Background */
+body {
+    background-image: url('background.jpeg'); /* Replace with your image URL */
+    background-size: cover; /* Ensure the background image covers the entire page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating the background image */
+    font-family: Arial, sans-serif; /* Clean font */
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    color: white; /* Text color for better visibility against dark background */
+}
+
+/* Header Styles */
+h1 {
+    color: gold;
+    font-size: 3em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds a shadow effect to the header text */
+}
+
+/* Draggable Container Styles */
+.draggableContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid lightblue;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for the draggable section */
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Draggable Box Styles */
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    cursor: grab;
+    background-color: #FDEAE3;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+.box img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain; /* Make sure the image fits inside the box without distortion */
+}
+
+/* Droppable Container Styles */
+.droppableContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid #CDE8E6;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white for the droppable areas */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Droppable Box Styles */
+.droppable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background-color: antiquewhite;
+    border: 2px dashed gray;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow for visual depth */
+}
+
+.droppable img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain; /* Ensure images are contained within the droppable area */
+}
+
+/* Draggable Format (when item is being dragged) */
+.draggableFormat {
+    font-weight: bold;
+    color: darkorange;
+    border: 5px dotted gray;
+}
+
+/* Remarks and Score Area */
+#remarks {
+    font-size: 1.5em;
+    color: green;
+    margin-top: 20px;
+}
+
+#scores {
+    font-size: 2em;
+    color: darkblue;
+    font-weight: bold;
+}
